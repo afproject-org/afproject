@@ -1,0 +1,24 @@
+{
+    "name": "high identity",
+    "short_name": "high-ident",
+    "description": "Protein sequences of >40% identity", 
+    "levels": [
+        {
+         "name": "class", 
+         "short_name": "cl",
+         "description": "Overall structural similarity"
+        }, {
+         "name": "fold", 
+         "short_name": "cf",
+         "description": "Major structural similarity"
+        }, {
+         "name": "superfamily", 
+         "short_name": "sf",
+         "description": "Most probable common evolutionary origin"
+        }, {
+         "name": "family", 
+         "short_name": "fa",
+         "description": "Clear evolutionarily relationship"
+        }
+    ]
+}

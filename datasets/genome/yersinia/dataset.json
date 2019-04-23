@@ -1,0 +1,26 @@
+{
+  "name": "Yersinia strains",
+  "description": "8 Yersinia genomes",
+  "tree_file": "Yersinia_D2S_k9.newick",
+  "subdatasets": [],
+  "seqids": [
+    "NC_009381",
+    "NC_008150",
+    "NC_003143",
+    "AAKT020000",
+    "NC_004088",
+    "NC_005810",
+    "NC_008149",
+    "BX936398"
+  ],
+  "treids": [
+    "Y_pestis_Pestoides_F_15-70",
+    "Y_pestis_Antiqua",
+    "Y_pestis_CO92",
+    "Y_pseudotuberculosis_IP31758",
+    "Y_pestis_KIM",
+    "Y_pestis_91001",
+    "Y_pestis_Nepal516",
+    "Y_pseudotuberculosis_IP32953"
+  ]
+}
