@@ -17,6 +17,8 @@ The following Python packages are required:
 
 ## Usage
 
+### Genome-based phylogeny & horizontal gene transfer
+
 To calculate accuracy with `fish_mito` dataset from the genome-based phylogeny category for input file in `TSV` format, just run:
 
 ```bash
@@ -42,6 +44,8 @@ python benchmark_genome.py --input example_input/genome/std/assembled-fish_mito_
 python benchmark_genome.py --input example_input/genome/std/assembled-fish_mito_random.newick --format phylip --reference fish_mito
 ```
 
+### Regulatory elements
+
 To calculate performance in the CRM dataset for your input PHYLIP file, just run:
 
 ```bash
@@ -65,6 +69,8 @@ Standard deviat.:	1.83
 Average:         	49.65
 ```
 
+### Protein sequence classification
+
 To calculate performance in the protein classification category, jus run:
 
 ```bash
@@ -74,14 +80,22 @@ python benchmark_protein.py -i example_input/protein/low-ident/low-ident_random.
 You will get information about your method's performance across 4 structural levels:
 
 ```
-AUC	class	0.5005448508889172
-AUC	fold	0.4998414124679509
-AUC	superfamily	0.5042921080665331
-AUC	family	0.5021884324506269
-Mean AUC: 0.5017167009685071
-Stdev AUC: 0.0017135629461110453
+AUC	class	     0.500
+AUC	fold	     0.499
+AUC	superfamily	 0.504
+AUC	family	     0.502
+Mean AUC:        0.501
+Stdev AUC:       0.002
 ```
 
+For protein sequences with high identity:
+
+```bash
+python benchmark_protein.py -i example_input/protein/high-ident/high-ident_random.tsv -f tsv -r high-ident
+```
+
+
+### Gene Tree Inference
 
 To calculate performance in the gene tree category, jus run:
 
@@ -103,7 +117,7 @@ ST009	nRF	1.0
 ST010	nRF	1.0
 ST011	nRF	0.99
 ST012	nRF	1.0
-MEAN nRF: 0.993
-STDEV nRF: 0.0124
+MEAN nRF:   0.993
+STDEV nRF:  0.0124
 ```
 
